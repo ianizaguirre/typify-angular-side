@@ -5,11 +5,13 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
+import { ArticleApiService } from './services/article-api.service';
 
 import { AppComponent } from './app.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { ArticleComponent } from './article/article.component';
+
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { ArticleComponent } from './article/article.component';
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    ArticleApiService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

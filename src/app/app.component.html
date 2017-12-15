@@ -1,10 +1,27 @@
-<header>
-  <h1> Typify app-component.html H1 </h1>
+<!-- Connect Font Family REMOVE AFTER LOCAL DEVELOPMENT -->
+<link rel="stylesheet" href="https://use.typekit.net/cey0tja.css">
 
-  <nav>
- 
-    <a routerLink="/"> Home </a>
-    <a routerLink="/article"> Article </a>
+<header>
+  <div class="contain-1">
+    <div class="flex-container header-content-wrapper">
+
+      <a href="./index.html">
+        <h1 class="logo-text"> Typify </h1>
+      </a>
+
+      <nav>
+        <ul class="flex-container">
+          <li> <a routerLink="/"> Home </a>      </li>
+          <li> <a routerLink="/article"> Article </a>      </li>
+        </ul>
+      </nav>
+    </div> <!-- flex-container | header-content-wrapper -->
+  </div> <!-- contain-1  -->
+</header>
+
+
+
+
  <!-- 
     <a routerLink="/phones"> Our Phones </a>
 
@@ -18,13 +35,13 @@
       Log Out
     </button>
  -->
-  </nav>
+
 
 <!--   <p *ngIf="userThang.currentUser">
     Hello, <b>{{ userThang.currentUser.username }}</b>.
   </p> -->
 
-</header>
+
 
 
 
