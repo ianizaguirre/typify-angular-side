@@ -7,6 +7,20 @@ import { environment } from '../../environments/environment';
 
 
 
+
+export class Article {
+	title     : string;
+	image     : string;
+	lines     : string[];
+
+	// these are assigned by the database
+	_id       : string;
+	createdAt : string;
+	updatedAt : string;
+}
+
+
+
 @Injectable()
 export class ArticleApiService {
 

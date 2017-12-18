@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { ArticleApiService } from '../services/article-api.service';
+import { ArticleApiService, Article } from '../services/article-api.service';
 
 @Component({
   selector: 'app-article',
@@ -9,7 +9,7 @@ import { ArticleApiService } from '../services/article-api.service';
 })
 export class ArticleComponent implements OnInit {
 
-	articles: any[] = [];
+	articles: Article[] = [];
 
   constructor( private articleThang: ArticleApiService ) { }
 
@@ -17,7 +17,7 @@ export class ArticleComponent implements OnInit {
 
   	this.articleThang.getArticles()
 
-  		.then((articleResults: any[]) => {
+  		.then((articleResults: Article[]) => {
   			console.log('Article List API');
   			console.log(articleResults);
 
