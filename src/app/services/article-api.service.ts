@@ -7,16 +7,20 @@ import 'rxjs/add/operator/toPromise';
 
 
 
-
-
-
 @Injectable()
 export class ArticleApiService {
 
   constructor(private httpThang: HttpClient) { }
 
 
-  // GET /api/phones
+  // GET /api/articles
+  getArticles() {
+  	return this.httpThang.get(
+  	  `http://localhost:3000/api/articles`
+  	  ).toPromise();
+  }1
+
+
   // POST /api/phones
   // GET /api/phones/:id
   // DELETE /api/phones/:id

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ArticleApiService } from '../services/article-api.service';
+
 @Component({
   selector: 'app-article',
   templateUrl: './article.component.html',
@@ -7,9 +9,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArticleComponent implements OnInit {
 
-  constructor() { }
+	articles: any[] = [];
+
+  constructor( private articleThang: ArticleApiService ) { }
 
   ngOnInit() {
-  }
+
+  	this.articleThang.getArticles()
+
+  		.then((articleResults: any[]) => {
+  			console.log('Article List API');
+  			console.log(articleResults);
+  		})
+  		.catch((err) {
+  			alert("Sorry Something went Wrong.");
+  			console.log("Article List Error via article.component.ts ")
+  			console.log(err);
+  		})
+
+  } // END ngOnInit()
 
 }
+
+
+/*
+
+*/
