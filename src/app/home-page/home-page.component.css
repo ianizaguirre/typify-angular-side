@@ -1,0 +1,31 @@
+@import url('/assets/global-css/global-buttons.css');
+
+
+/* ========
+===> Clouds Animation
+=========== */
+.cloud-container {
+	width: 100%;
+	min-height: 15em;
+  border-bottom: solid #F6F8F9 7px;
+}
+.clouds {
+	background: url(../../assets/images/clouds.png) repeat-x top center transparent;
+	z-index: 3;
+}
+.clouds {
+	-webkit-animation: move-clouds-back 200s linear infinite;
+	animation: move-clouds-back 200s linear infinite;
+}
+
+@-webkit-keyframes move-clouds-back {
+  from {
+    background-position: 0 -50px; }
+  to {
+    background-position: 10000px -50px; } }
+
+@keyframes move-clouds-back {
+  from {
+    background-position: 0 -50px; }
+  to {
+    background-position: 10000px -50px; } }

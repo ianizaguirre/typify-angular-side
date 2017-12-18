@@ -1,22 +1,26 @@
-<p>
-  article works!
-</p>
 
 
-<h2> Our Articles </h2>
+<div class="contain-1">
 
-<ul>
-	<li *ngFor="let oneResult of articles">
-		<h3> {{oneResult.title }} </h3>
 
-		<h4> Article Content </h4>
 
-		<p>
-			{{ oneResult.lines }}
-		</p>
+	<h2> Our Articles </h2>
 
-		<img [src]="oneResult.image" />
+	<ul>
+		<li *ngFor="let oneResult of articles">
+			<h3> {{oneResult.title }} </h3>
 
-	</li>
-</ul>
+			<h4> Article Content </h4>
 
+			<p>
+				{{ oneResult.lines }}
+			</p>
+
+			<img [src]="oneResult.image" />
+
+		</li>
+	</ul>
+
+
+
+</div> <!-- contain-1 -->
