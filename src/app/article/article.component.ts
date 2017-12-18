@@ -20,6 +20,8 @@ export class ArticleComponent implements OnInit {
   		.then((articleResults: any[]) => {
   			console.log('Article List API');
   			console.log(articleResults);
+
+  			this.articles = articleResults;
   		})
   		.catch((err) => {
   			alert("Sorry Something went Wrong.");
