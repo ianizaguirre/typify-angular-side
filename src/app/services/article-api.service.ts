@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 
 import 'rxjs/add/operator/toPromise';
 
-//import { environment } from '../../environments/environment';
+import { environment } from '../../environments/environment';
 
 
 
@@ -13,10 +13,10 @@ export class ArticleApiService {
   constructor(private httpThang: HttpClient) { }
 
 
-  // GET /api/articles
+  // GET    /api/articles
   getArticles() {
   	return this.httpThang.get(
-  	  `http://localhost:3000/api/articles`
+  	  `${environment.backendUrl}/api/articles`
   	  ).toPromise();
   }1
 
