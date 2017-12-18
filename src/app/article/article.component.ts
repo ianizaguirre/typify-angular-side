@@ -21,9 +21,9 @@ export class ArticleComponent implements OnInit {
   			console.log('Article List API');
   			console.log(articleResults);
   		})
-  		.catch((err) {
+  		.catch((err) => {
   			alert("Sorry Something went Wrong.");
-  			console.log("Article List Error via article.component.ts ")
+  			console.log("Article List Error via article.component.ts ");
   			console.log(err);
   		})
 
