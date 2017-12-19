@@ -1,3 +1,42 @@
-<p>
-  signup works!
-</p>
+<div class="contain-1">
+<div class="login-form-wrapper">
+
+	<h1 class="login-heading"> Sign up For Free! </h1>
+
+
+
+<form class="login-form" (ngSubmit)="startSignupAjax()">
+	<label for="fullname-input"> Full Name</label>
+	<input id="fullname-input" type="text" placeholder="e.g. Bruce Wayne" 
+	[(ngModel)]="theUser.fullName" name="fullNameInput" />
+
+	<br />
+
+	<label for="username-input"> Username </label>
+	<input id="username-input" type="text" placeholder="e.g. batman" 
+	[(ngModel)]="theUser.username" name="usernameInput" />
+
+	<br />
+
+	<label for="password-input"> Password </label>
+	<input id="password-input" type="password" placeholder="e.g. *****" 
+	[(ngModel)]="theUser.password" name="passwordInput" />
+
+	<br />
+	
+	<div class="login-btn-wrapper">
+		<button class="login-btn"> Sign up </button>
+	</div> <!-- login-btn-wrapper -->
+
+
+</form>
+
+
+
+
+
+
+
+
+</div> <!-- login-form-wrapper -->
+</div> <!-- contain-1 -->

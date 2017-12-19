@@ -13,7 +13,7 @@
         <ul class="flex-container">
           <li> <a routerLink="/"> Home </a>      </li>
           <!-- <li> <a routerLink="/article"> Article </a>      </li> -->
-          <li> <a routerLink="/join"> Join </a>      </li>
+          <li *ngIf="!userThang.currentUser"> <a routerLink="/join" class="join"> Join </a>      </li>
 
          <li> <button class="signout" *ngIf="userThang.currentUser"
             (click)="startLogOutAjax()">

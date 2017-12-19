@@ -1,14 +1,46 @@
-<div class="join-page-wrapper">
 
+<div class="contain-1">
 
-	<app-login></app-login>
-
-	<app-signup></app-signup>
-
+<div class="circle-area-wrap">
+	<button class=" color-btn circle-btn btn" (click)="toggleJoinSection()"> 
+		<span *ngIf=showSection>Sign Up?</span>
+		<span *ngIf=!showSection>Sign In?</span>
+ </button>
+</div>
 
 </div>
 
 
 
 
-<div class="temp-SPACE-footer-end"> <br /> </div>
+<div class="join-page-wrapper">
+
+
+	<div *ngIf=showSection>
+			<app-login></app-login>
+	</div>
+
+
+	<div *ngIf=!showSection>
+			<app-signup></app-signup>
+	</div>
+
+
+</div>
+
+
+
+<div class="temp-SPACE-footer-end"> <br /> <br />  <br />  <br />  <br />  </div>
+
+
+
+
+
+<!-- <div *ngIf="!userThang.currentUser">
+		<app-login></app-login>
+</div>
+
+
+<div *ngIf="userThang.currentUser">
+		<app-signup></app-signup>
+</div> -->
