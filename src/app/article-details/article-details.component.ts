@@ -5,6 +5,8 @@ import { ArticleApiService, Article } from '../services/article-api.service';
 
 
 
+
+
 @Component({
   selector: 'app-article-details',
   templateUrl: './article-details.component.html',
@@ -14,6 +16,11 @@ export class ArticleDetailsComponent implements OnInit {
 
 	articleInfo = new Article();
 	showSection = false;
+ 
+
+
+
+
 
   constructor(
     private activatedThang : ActivatedRoute,
@@ -83,4 +90,6 @@ export class ArticleDetailsComponent implements OnInit {
 
 
 
+            
+    
 }
