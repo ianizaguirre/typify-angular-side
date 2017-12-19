@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { ArticleComponent } from './article/article.component';
+import { ArticleDetailsComponent } from './article-details/article-details.component';
 
 
 
@@ -19,7 +20,8 @@ import { ArticleComponent } from './article/article.component';
     AppComponent,
     NotFoundComponent,
     HomePageComponent,
-    ArticleComponent
+    ArticleComponent,
+    ArticleDetailsComponent
   ],
   imports: [
     BrowserModule,

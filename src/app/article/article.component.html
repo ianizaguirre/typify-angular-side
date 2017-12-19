@@ -10,8 +10,9 @@
 		<ul class="flex-grid-thirds">
 
 			<li class="col" *ngFor="let oneResult of articles;">
+				<a [routerLink]="['/articles', oneResult._id]">
 
-				
+
 					<div class="bordered-wrap">
 
 						<h3> {{oneResult.title }} </h3>
@@ -20,11 +21,11 @@
 						 {{oneResult.intro }}
 						</p>
 
-
 					</div> <!-- bordered-wrap -->
 			
-				
 
+				 					 
+				</a>
 			</li>
 		</ul><!-- flex-grid-thirds -->
 
@@ -35,7 +36,7 @@
 
 
 
-
+<!-- <a [routerLink]="['/articles', oneResult._id]"> See Details </a> -->
 
 
 <!-- <div *ngFor=" let tweet of singleCategory;  let i=index">

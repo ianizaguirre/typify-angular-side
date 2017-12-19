@@ -36,8 +36,28 @@ export class ArticleApiService {
   }1
 
 
+
+
   // POST /api/phones
+
+
+
+
+
   // GET /api/phones/:id
+  getOneArticle(oneId: string) {
+    return this.httpThang.get(
+      `${environment.backendUrl}/api/articles/${oneId}`,
+      // send the cookies even to a different domain
+      { withCredentials: true }
+      ).toPromise();
+  }
+
+
+
+
+
+
   // DELETE /api/phones/:id
 
 }

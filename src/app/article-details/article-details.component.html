@@ -1,0 +1,43 @@
+
+
+	<div class="contain-banner">
+<div class="frame-img">
+		<!-- 	<div class="banner-overlay"> -->
+				
+					<img class="adjust-img" [src]="articleInfo.image" />
+				
+	<!-- 		</div> -->
+</div>
+</div>
+				
+		
+		
+
+
+<div class="contain-1">
+
+	<div class="contain-text">
+
+<div class="article-head-wrap">  <h3 class="banner-header"> {{ articleInfo.title }} </h3>  </div>
+
+
+						<div *ngFor="let oneResult of articleInfo.lines, let i=index">   
+
+							<p class="article-text" (click)="showCommentSection()">
+
+								 <span *ngIf=showSection > CCCCCCC </span>
+
+								 {{ oneResult }} 
+
+							</p>
+
+						</div> <!-- For Each -->
+
+			</div> <!-- contain-text -->		
+
+
+</div> <!-- contain-1 -->
+
+
+
+
