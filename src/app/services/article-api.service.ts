@@ -9,8 +9,9 @@ import { environment } from '../../environments/environment';
 
 
 export class Article {
+  image     : string;
 	title     : string;
-	image     : string;
+  intro     : string;
 	lines     : string[];
 
 	// these are assigned by the database

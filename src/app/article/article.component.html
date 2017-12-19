@@ -1,26 +1,46 @@
 
 
 <div class="contain-1">
+	<h2 class="header-line articles-head"> Our Latest Articles </h2>
+	
 
 
 
-	<h2> Our Articles </h2>
 
-	<ul>
-		<li *ngFor="let oneResult of articles">
-			<h3> {{oneResult.title }} </h3>
+		<ul class="flex-grid-thirds">
 
-			<h4> Article Content </h4>
+			<li class="col" *ngFor="let oneResult of articles;">
 
-			<p>
-				{{ oneResult.lines }}
-			</p>
+				
+					<div class="bordered-wrap">
 
-			<img [src]="oneResult.image" />
+						<h3> {{oneResult.title }} </h3>
 
-		</li>
-	</ul>
+						<p class="article-intro">
+						 {{oneResult.intro }}
+						</p>
 
+
+					</div> <!-- bordered-wrap -->
+			
+				
+
+			</li>
+		</ul><!-- flex-grid-thirds -->
 
 
 </div> <!-- contain-1 -->
+
+
+
+
+
+
+
+
+<!-- <div *ngFor=" let tweet of singleCategory;  let i=index">
+    <div *ngIf="i<2">
+        {{tweet}}
+    </div>
+</div>
+ -->
