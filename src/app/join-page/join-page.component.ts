@@ -17,7 +17,7 @@ export class JoinPageComponent implements OnInit {
   }
 
 
-  toggleJoinSection(urlId) {
+  toggleJoinSection() {
 
   	console.log(this.showSection);
 
