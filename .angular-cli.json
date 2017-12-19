@@ -23,6 +23,7 @@
         "assets/global-css/styles.css",
         "assets/global-css/flex-rules.css",
         "assets/global-css/global-buttons.css",
+        "assets/global-css/form.css",
         "assets/global-css/nav.css"
       ],
       "scripts": [],

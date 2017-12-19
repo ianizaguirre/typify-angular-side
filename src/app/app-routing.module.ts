@@ -7,6 +7,8 @@ import { ArticleComponent } from './article/article.component';
 import { ArticleDetailsComponent } from './article-details/article-details.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
+import { JoinPageComponent } from './join-page/join-page.component';
+
 
 
 
@@ -16,7 +18,7 @@ const routes: Routes = [
 	{ path: 'article',           component:  ArticleComponent }, //Article List
 	// { path: 'phones',     component:  PhoneListComponent },
 	 { path: 'articles/:id', component:  ArticleDetailsComponent },
-	// { path: 'join',       component:  JoinPageComponent },
+	{ path: 'join',       component:  JoinPageComponent },
 
 	{ path: '**',         component:  NotFoundComponent }
 ];

@@ -1,0 +1,37 @@
+<div class="contain-1">
+<div class="login-form-wrapper">
+
+	<h1 class="login-heading"> Hello! Welcome back. </h1>
+
+
+
+<form class="login-form" (ngSubmit)="startLoginAjax()">
+
+
+	<label for="username-input"> Username </label>
+	<input id="username-input" type="text" placeholder="e.g. Ian" 
+	[(ngModel)]="theUser.username" name="usernameInput" />
+
+	<br />
+
+	<label for="password-input"> Username </label>
+	<input id="password-input" type="password" placeholder="e.g. *****" 
+	[(ngModel)]="theUser.password" name="passwordInput" />
+
+	<br />
+
+
+	<div class="login-btn-wrapper">
+		<button class="login-btn"> Sign in </button>
+	</div> <!-- login-btn-wrapper -->
+
+
+</form>
+
+
+
+
+
+
+</div> <!-- login-form-wrapper -->
+</div> <!-- contain-1 -->

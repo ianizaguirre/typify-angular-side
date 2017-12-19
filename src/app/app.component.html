@@ -12,10 +12,20 @@
       <nav>
         <ul class="flex-container">
           <li> <a routerLink="/"> Home </a>      </li>
-          <li> <a routerLink="/article"> Article </a>      </li>
+          <!-- <li> <a routerLink="/article"> Article </a>      </li> -->
+          <li> <a routerLink="/join"> Join </a>      </li>
+
+         <li> <button class="signout" *ngIf="userThang.currentUser"
+            (click)="startLogOutAjax()">
+            Sign Out
+          </button> </li>
         </ul>
       </nav>
     </div> <!-- flex-container | header-content-wrapper -->
+
+
+
+
   </div> <!-- contain-1  -->
 </header>
 
@@ -55,5 +65,10 @@
 
 <footer>
   <br />
+
+  <p class="hello-user-footer" *ngIf="userThang.currentUser">
+    Hello, <span class="footer-username">{{ userThang.currentUser.username }}</span>.
+  </p>
+
   <br />
 </footer>
